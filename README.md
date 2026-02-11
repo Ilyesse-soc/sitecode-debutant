@@ -6,6 +6,14 @@ Ce projet est conçu pour **apprendre à coder un vrai portfolio** étape par é
 
 ---
 
+## 🌐 ACCÈDE AU GUIDE INTERACTIF
+
+👉 **[Ouvre le guide sur le site web : guide-index.html](guide-index.html)**
+
+Le guide est maintenant un **vrai site web interactif** avec navigation, design moderne et exercices !
+
+---
+
 ## 📁 Structure du projet
 
 ```

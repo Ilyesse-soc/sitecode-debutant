@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Étapes - Guide Complet Portfolio</title>
+    <link rel="stylesheet" href="guide-style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>🎓 Guide Portfolio Business</h1>
+            <ul class="nav-links">
+                <li><a href="guide-index.html">Accueil</a></li>
+                <li><a href="guide-etapes.html" class="active">Les Étapes</a></li>
+                <li><a href="guide-exercices.html">Exercices</a></li>
+                <li><a href="guide-enseignant.html">Pour l'Enseignant</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>📘 Guide Complet - 12 Étapes</h1>
+            <p class="subtitle">Apprends à coder ton portfolio ligne par ligne</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- ÉTAPE 0 -->
+        <div class="step-box">
+            <div class="step-header">
+                <div class="step-number">ÉTAPE 0</div>
+                <div class="step-title">Préparation de l'espace de travail</div>
+            </div>
+            
+            <h3>🗂️ Crée la structure de dossiers</h3>
+            <p>Avant de commencer, organise ton projet :</p>
+            
+            <div class="code-block"><code>portfolio-business/
+├── index.html       ← Ta page web (à créer)
+├── style.css        ← Ton design (à créer)
+└── images/          ← Tes photos (optionnel)</code></div>
+            
+            <h3>💻 Ouvre VS Code</h3>
+            <ol>
+                <li>Clique droit dans le dossier <code>portfolio-business</code></li>
+                <li>Choisis "Ouvrir avec Code"</li>
+                <li>Crée un nouveau fichier : <strong>index.html</strong></li>
+            </ol>
+            
+            <div class="test-box">
+                <h4>✅ Prêt ?</h4>
+                <p>Continue à l'étape 1 !</p>
+            </div>
+        </div>
+
+        <!-- ÉTAPE 1 -->
+        <div class="step-box">
+            <div class="step-header">
+                <div class="step-number">ÉTAPE 1</div>
+                <div class="step-title">La base HTML (5 minutes)</div>
+            </div>
+            
+            <h3>📝 Ton premier code</h3>
+            <p>Ouvre <code>index.html</code> et tape <strong>ligne par ligne</strong> :</p>
+            
+            <div class="code-block"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mon Portfolio&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Bonjour, je suis [Ton Nom]&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></div>
+            
+            <div class="explanation">
+                <h4>🧠 Comprendre ce que tu as tapé :</h4>
+                <table>
+                    <tr>
+                        <th>Code</th>
+                        <th>Signification</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;!DOCTYPE html&gt;</code></td>
+                        <td>"Hé navigateur, c'est du HTML5 !"</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;html lang="fr"&gt;</code></td>
+                        <td>Début du document, langue française</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;head&gt;</code></td>
+                        <td>Informations invisibles (paramètres)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;meta charset="UTF-8"&gt;</code></td>
+                        <td>Accepte les accents (é, à, ç...)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;title&gt;</code></td>
+                        <td>Titre dans l'onglet du navigateur</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;body&gt;</code></td>
+                        <td>Contenu visible de ta page</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h1&gt;</code></td>
+                        <td>Titre principal (Heading 1)</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="test-box">
+                <h4>✅ Teste ton code :</h4>
+                <ol>
+                    <li><strong>Sauvegarde</strong> (Ctrl + S)</li>
+                    <li><strong>Fais un clic droit</strong> sur index.html</li>
+                    <li>Choisis <strong>"Ouvrir avec le navigateur par défaut"</strong></li>
+                </ol>
+                <p><strong>Tu dois voir</strong> ton nom en gros titre !</p>
+            </div>
+        </div>
+
+        <!-- ÉTAPE 2 -->
+        <div class="step-box">
+            <div class="step-header">
+                <div class="step-number">ÉTAPE 2</div>
+                <div class="step-title">Ajouter la navigation (10 minutes)</div>
+            </div>
+            
+            <h3>📝 Ajoute le menu</h3>
+            <p>Juste <strong>après</strong> <code>&lt;body&gt;</code>, ajoute :</p>
+            
+            <div class="code-block"><code>&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;[Ton Nom]&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#accueil"&gt;Accueil&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#apropos"&gt;À propos&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;</code></div>
+            
+            <div class="explanation">
+                <h4>🧠 Nouvelles balises :</h4>
+                <table>
+                    <tr>
+                        <th>Balise</th>
+                        <th>Signification</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;header&gt;</code></td>
+                        <td>En-tête de la page</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;nav&gt;</code></td>
+                        <td>Zone de navigation</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;ul&gt;</code></td>
+                        <td>Liste à puces (Unordered List)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;li&gt;</code></td>
+                        <td>Élément de liste (List Item)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;a href=""&gt;</code></td>
+                        <td>Lien hypertexte</td>
+                    </tr>
+                    <tr>
+                        <td><code>#accueil</code></td>
+                        <td>Ancre interne (va vers une section)</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="test-box">
+                <h4>✅ Teste :</h4>
+                <p>Recharge ta page → Tu dois voir 3 liens (pas encore stylés)</p>
+            </div>
+        </div>
+
+        <!-- ÉTAPE 3 -->
+        <div class="step-box">
+            <div class="step-header">
+                <div class="step-number">ÉTAPE 3</div>
+                <div class="step-title">Créer les sections (15 minutes)</div>
+            </div>
+            
+            <h3>📝 Ajoute les 3 sections</h3>
+            <p><strong>Après</strong> <code>&lt;/header&gt;</code>, ajoute :</p>
+            
+            <div class="code-block"><code>    &lt;section id="accueil"&gt;
+        &lt;h2&gt;Bienvenue sur mon portfolio&lt;/h2&gt;
+        &lt;p&gt;Étudiant en Business & Économie, passionné par l'entrepreneuriat.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;section id="apropos"&gt;
+        &lt;h2&gt;À propos de moi&lt;/h2&gt;
+        &lt;p&gt;Je développe des compétences en gestion et finance.&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Analyse financière&lt;/li&gt;
+            &lt;li&gt;Marketing stratégique&lt;/li&gt;
+            &lt;li&gt;Entrepreneuriat&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+
+    &lt;section id="contact"&gt;
+        &lt;h2&gt;Contact&lt;/h2&gt;
+        &lt;p&gt;Email : ton.email@exemple.com&lt;/p&gt;
+        &lt;p&gt;LinkedIn : linkedin.com/in/ton-profil&lt;/p&gt;
+    &lt;/section&gt;</code></div>
+            
+            <div class="explanation">
+                <h4>🧠 Nouvelles balises :</h4>
+                <table>
+                    <tr>
+                        <th>Balise</th>
+                        <th>Signification</th>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;section&gt;</code></td>
+                        <td>Section de contenu</td>
+                    </tr>
+                    <tr>
+                        <td><code>id="accueil"</code></td>
+                        <td>Identifiant unique (pour les liens)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;h2&gt;</code></td>
+                        <td>Sous-titre (Heading 2)</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>Paragraphe de texte</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="test-box">
+                <h4>✅ Teste :</h4>
+                <p>Clique sur les liens du menu → La page doit défiler vers chaque section !</p>
+            </div>
+        </div>
+
+        <!-- ÉTAPE 4 -->
+        <div class="step-box">
+            <div class="step-header">
+                <div class="step-number">ÉTAPE 4</div>
+                <div class="step-title">Ajouter le pied de page (5 minutes)</div>
+            </div>
+            
+            <h3>📝 Tout en bas, avant &lt;/body&gt;</h3>
+            
+            <div class="code-block"><code>    &lt;footer&gt;
+        &lt;p&gt;© 2026 - Mon Portfolio Business&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></div>
+            
+            <div class="explanation">
+                <h4>🧠 Comprendre :</h4>
+                <ul>
+                    <li><code>&lt;footer&gt;</code> = Pied de page</li>
+                    <li><code>©</code> = Symbole copyright</li>
+                </ul>
+            </div>
+            
+            <div class="test-box">
+                <h4>✅ Ton HTML est complet !</h4>
+                <p>À ce stade, tu as :</p>
+                <ul>
+                    <li>✅ Une structure HTML valide</li>
+                    <li>✅ Un menu de navigation</li>
+                    <li>✅ 3 sections de contenu</li>
+                    <li>✅ Un pied de page</li>
+                </ul>
+                <p><strong>MAIS</strong> c'est moche ! 😅 On va corriger ça avec le CSS →</p>
+            </div>
+        </div>
+
+        <!-- ÉTAPE 5 -->
+        <div class="step-box">
+            <div class="step-header">
+                <div class="step-number">ÉTAPE 5</div>
+                <div class="step-title">Créer le fichier CSS (5 minutes)</div>
+            </div>
+            
+            <h3>📝 Crée style.css</h3>
+            <ol>
+                <li><strong>Crée un nouveau fichier</strong> : <code>style.css</code></li>
+                <li><strong>Lie-le au HTML</strong> : dans <code>index.html</code>, dans la section <code>&lt;head&gt;</code>, ajoute :</li>
+            </ol>
+            
+            <div class="code-block"><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mon Portfolio&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;</code></div>
+            
+            <div class="explanation">
+                <h4>🧠 Comprendre :</h4>
+                <ul>
+                    <li><code>&lt;link&gt;</code> = Lien vers un fichier externe</li>
+                    <li><code>rel="stylesheet"</code> = C'est une feuille de style</li>
+                    <li><code>href="style.css"</code> = Le nom du fichier CSS</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ÉTAPE 6 - Continué avec toutes les étapes CSS -->
+        <div class="step-box">
+            <div class="step-header">
+                <div class="step-number">ÉTAPES 6-10</div>
+                <div class="step-title">Styliser avec CSS (30 minutes)</div>
+            </div>
+            
+            <h3>📝 Dans style.css, ajoute progressivement :</h3>
+            
+            <h4>🎨 6. Styliser le BODY</h4>
+            <div class="code-block"><code>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}</code></div>
+            
+            <h4>🎯 7. Styliser le HEADER</h4>
+            <div class="code-block"><code>header {
+    background-color: #1e2a38;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}</code></div>
+            
+            <h4>🧭 8. Styliser le MENU</h4>
+            <div class="code-block"><code>nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}</code></div>
+            
+            <h4>📄 9. Styliser les SECTIONS</h4>
+            <div class="code-block"><code>section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: white;
+}
+
+h2 {
+    color: #1e2a38;
+}</code></div>
+            
+            <h4>🦶 10. Styliser le FOOTER</h4>
+            <div class="code-block"><code>footer {
+    background-color: #1e2a38;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}</code></div>
+            
+            <div class="test-box">
+                <h4>✅ Teste après chaque ajout !</h4>
+                <p>Recharge ta page → Le design professionnel apparaît progressivement !</p>
+            </div>
+        </div>
+
+        <!-- ÉTAPE 11 -->
+        <div class="step-box">
+            <div class="step-header">
+                <div class="step-number">ÉTAPE 11</div>
+                <div class="step-title">Personnalisation (À TOI DE JOUER !)</div>
+            </div>
+            
+            <h3>✏️ Exercices de personnalisation :</h3>
+            
+            <ol>
+                <li><strong>Change ton nom</strong> dans le HTML</li>
+                <li><strong>Modifie les couleurs</strong> :
+                    <ul>
+                        <li>Essaie <code>background-color: #2c3e50;</code> (bleu différent)</li>
+                        <li>Essaie <code>color: #e74c3c;</code> (rouge)</li>
+                    </ul>
+                </li>
+                <li><strong>Ajoute une section "Projets"</strong></li>
+                <li><strong>Change la police</strong> :
+                    <ul>
+                        <li>Essaie <code>font-family: 'Georgia', serif;</code></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <!-- ÉTAPE 12 -->
+        <div class="step-box">
+            <div class="step-header">
+                <div class="step-number">ÉTAPE 12</div>
+                <div class="step-title">Publier sur GitHub</div>
+            </div>
+            
+            <h3>📝 Dans le terminal VS Code :</h3>
+            
+            <div class="code-block"><code>git add .
+git commit -m "Mon portfolio terminé"
+git push</code></div>
+            
+            <p>Puis active <strong>GitHub Pages</strong> dans les paramètres de ton dépôt !</p>
+        </div>
+
+        <!-- CONCLUSION -->
+        <section class="cta">
+            <h2>🎉 Félicitations !</h2>
+            <p>Tu as appris les bases du HTML et CSS !</p>
+            <a href="guide-exercices.html" class="btn-primary">Passe aux Exercices 💪</a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 - Guide Portfolio Business</p>
+            <p><a href="guide-index.html">Accueil</a> | <a href="guide-etapes.html">Guide</a> | <a href="guide-exercices.html">Exercices</a></p>
+        </div>
+    </footer>
+</body>
+</html>
